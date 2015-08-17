@@ -1,3 +1,8 @@
-var connection = require('../connection');
+var assert = require("assert");
+var connection = require("../connection");
 
-console.log(connection.open);
+describe('Test Connection', function(){
+  it('should return true when connection is open', function(){
+    assert.equal(true, connection.open());
+  });
+});
